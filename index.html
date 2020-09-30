@@ -6,104 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Starbucks Coffee korea</title>
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
-<style>
-    .hidden {
-        text-indent: -9999px;
-    }
-
-    .wrap {
-        background-color: green;
-    }
-
-    /* HEADER */
-    header {
-        background-color: #F6F5EF;
-        width: 1100px;
-        height: 120px;
-        margin: 0 auto;
-        border: 1px solid red;
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .top_logo {
-        background-image: url('images/logo.png');
-        width: 75px;
-        height: 75px;
-        border: 1px solid red;
-        background-color: tomato;
-    }
-
-    .top_menu {
-        border: 1px solid red;
-        display: flex;
-        justify-content: right;
-        padding: 15px;
-    }
-
-    .top_menu li {
-        font-size: 12px;
-    }
-
-    .top_menu li::after {
-        content: "";
-        display: inline-block;
-        width: 1px;
-        height: 13px;
-        background-color: gray;
-        margin: 0 15px;
-    }
-
-    .nav {
-        border: 1px solid red;
-        display: flex;
-        justify-content: right;
-        height:65px;
-    }
-
-    .nav>li {
-        /* border: 1px solid blue; */
-        padding: 10px 20px;
-        font-size: 13px;
-    }
-
-    .nav li div {
-        position: absolute;
-        left: 0;
-        right: 0;
-        top: 120px;
-        display: none;
-        border: 1px solid red;
-    }
-
-    .nav li div.show {
-        display: flex;
-        justify-content: center;
-        background-color:#2C2A29;
-    }
-
-    .nav li div>ul>li{
-        padding:5px 0;
-        font-size:12px;
-    }
-
-    .nav li div>ul>a{
-        font-weight: 900;
-        margin: 15px 0;
-        display:inline-block;
-    }
-
-    .nav li ul {
-        border: 1px solid red;
-        margin-right:30px;
-        /* font-weight: 900; */
-    }
-
-    .nav li ul a {
-        color: #fff;
-    }
-</style>
 
 <body>
     <div class="wrap">
@@ -174,17 +79,46 @@
                     </li>
                     <li>
                         <a href="">STARBUCKS REWARDS
-
                         </a>
                     </li>
                     <li>
                         <a href="">WHAT'S NEW
-
                         </a>
                     </li>
                 </ul>
             </div>
         </header>
+        <section>
+            <div class="main">
+                <div class="main_banner">
+                    <div class="main_title">
+                        <img src="images/2020_autumn1_emblem.png" alt="main_banner_title">
+                        <button>자세히보기</button>
+                    </div>
+                    <div class="main_images">
+                        <img src="images/2020_autumn1_glazed_latte.png" alt="latte">
+                        <img src="images/2020_autumn1_oat_chocolat_1.png" alt="chocolat">
+                        <img src="images/2020_autumn1_apple_latte.png" alt="cookie">
+                        <img src="images/2020_autumn1_frappuccino_1.png" alt="apple">
+                    </div>
+                </div>
+            </div>
+            <div class="notice_banner">
+                <div class="notice_section">
+                    <h3>공지사항</h3>
+                    <h2>공지사항 입니다.</h2>
+                    <i class="material-icons">
+                        add_circle_outline
+                    </i>
+                </div>
+                <div class="event_section">
+                    <h3>스타벅스 프로모션</h3>
+                    <i class="material-icons">
+                        check_circle_outline
+                    </i>               
+                </div>
+            </div>
+        </section>
     </div>
 
     <script>
@@ -197,9 +131,15 @@
 
         function navClickWork(e) {
             e.preventDefault()
-            e.target.parentNode.querySelector('div').classList.add('show')
-            e.target.style.color = '#fff'
-            e.target.parentNode.style.backgroundColor = '#2C2A29'
+            if (e.target.parentNode.querySelector('div').classList.contains('show')) {
+                e.target.parentNode.querySelector('div').classList.remove('show')
+                e.target.style.color = '#000'
+                e.target.parentNode.style.backgroundColor = '#F6F5EF'
+            } else {
+                e.target.parentNode.querySelector('div').classList.add('show')
+                e.target.style.color = '#fff'
+                e.target.parentNode.style.backgroundColor = '#2C2A29'
+            }
         }
     </script>
 

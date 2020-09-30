@@ -1,0 +1,189 @@
+.hidden {
+    text-indent: -9999px;
+}
+
+.wrap {
+    background-color: green;
+}
+
+/* HEADER */
+header {
+    background-color: #F6F5EF;
+    width: 1100px;
+    height: 120px;
+    margin: 0 auto;
+    border: 1px solid red;
+    display: flex;
+    justify-content: space-between;
+}
+
+.top_logo {
+    background-image: url('../images/logo.png');
+    width: 75px;
+    height: 75px;
+    border: 1px solid blue;
+}
+
+.top_menu {
+    border: 1px solid red;
+    display: flex;
+    justify-content: right;
+    padding: 15px;
+}
+
+.top_menu li {
+    font-size: 12px;
+}
+
+.top_menu li::after {
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 13px;
+    background-color: gray;
+    margin: 0 15px;
+}
+
+.nav {
+    border: 1px solid red;
+    display: flex;
+    justify-content: right;
+    height: 65px;
+}
+
+.nav>li {
+    padding: 10px 20px;
+    font-size: 13px;
+}
+
+.nav li div {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 120px;
+    display: none;
+    border: 1px solid red;
+}
+
+.nav li div.show {
+    display: flex;
+    justify-content: center;
+    background-color: #2C2A29;
+}
+
+.nav li div>ul>li {
+    padding: 5px 0;
+    font-size: 12px;
+}
+
+.nav li div>ul>a {
+    font-weight: 900;
+    margin: 15px 0;
+    display: inline-block;
+}
+
+.nav li ul {
+    border: 1px solid red;
+    margin-right: 30px;
+}
+
+.nav li ul a {
+    color: #fff;
+}
+
+/* SECTION */
+section .main {
+    background-image: url('../images/2020_autumn1_bg.jpg');
+    height: 646px;
+}
+
+section .main .main_banner {
+    width: 1100px;
+    border: 1px solid red;
+    margin: 0 auto;
+}
+
+section .main .main_banner img {
+    display: block;
+    padding: 70px 0 40px 0;
+}
+
+section .main .main_banner button {
+    padding: 8px 25px;
+    background-color: rgb(229, 187, 149, 0);
+    border: 2px solid #fff;
+    color: #fff;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: background-color .2s linear;
+}
+
+section .main .main_banner button:hover {
+    background-color: rgb(229, 187, 149, 1);
+    color: #000;
+}
+
+section .main .main_banner .main_images {
+    border: 1px solid red;
+    position: relative;
+}
+
+section .main .main_banner .main_images img {
+    border: 1px solid blue;
+    width: 33%;
+    position: absolute;
+}
+
+section .main .main_banner .main_images img:nth-child(1) {
+    border: 1px solid lime;
+    top: -180px;
+    left: 200px;
+}
+
+section .main .main_banner .main_images img:nth-child(2) {
+    border: 1px solid lime;
+    top: -200px;
+    left: 420px;
+    width: 35%;
+}
+
+section .main .main_banner .main_images img:nth-child(3) {
+    border: 1px solid lime;
+    top: -150px;
+    left: 700px;
+    width: 30%;
+}
+
+section .main .main_banner .main_images img:nth-child(4) {
+    border: 1px solid lime;
+    top: -250px;
+    left: 900px;
+    width: 30%;
+}
+
+/* MAIN NOTICE BANNER */
+section .notice_banner{
+    display:flex;  
+}
+
+section .notice_banner>div {
+    width: 50%;
+    height: 62px;
+    display:flex;
+    align-items: center;
+    border:1px solid red;
+}
+
+section .notice_banner h3{
+    margin-right:30px;
+}
+
+section .notice_banner .notice_section {
+    background-color: #000;
+    color:#fff;
+    padding-left:200px;
+}
+
+section .notice_banner .event_section {
+    background-color: #F5F4EF;
+}

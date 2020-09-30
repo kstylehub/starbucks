@@ -3,7 +3,7 @@
 }
 
 .wrap {
-    background-color: green;
+    background-color: #F6F5EF;
 }
 
 /* HEADER */
@@ -162,28 +162,57 @@ section .main .main_banner .main_images img:nth-child(4) {
 }
 
 /* MAIN NOTICE BANNER */
-section .notice_banner{
-    display:flex;  
+section .notice_banner {
+    display: flex;
 }
 
 section .notice_banner>div {
     width: 50%;
     height: 62px;
-    display:flex;
+    display: flex;
     align-items: center;
-    border:1px solid red;
+    border: 1px solid red;
 }
 
-section .notice_banner h3{
-    margin-right:30px;
+section .notice_banner h3 {
+    margin-right: 30px;
 }
 
 section .notice_banner .notice_section {
     background-color: #000;
-    color:#fff;
-    padding-left:200px;
+    color: #fff;
+    padding-left: 200px;
 }
 
 section .notice_banner .event_section {
     background-color: #F5F4EF;
+}
+
+/* BXSLIDER */
+.bx-wrapper img {
+    margin: 0 auto;
+}
+
+/* .bx-wrapper::after{
+    content:'자세히보기';
+    display:block;
+    padding:10px 5px;
+    border:1px solid red;
+    width:100px;
+    cursor: pointer;
+    margin: 0 auto;
+    position: absolute;
+    top:500px;
+    left:50%;
+    transform:translateX(-50%);
+} */
+
+.slider .bxslider div button{
+    position: absolute;
+    z-index: 9999999;
+    background-color:#000;
+}
+
+.slider .bx-wrapper .bx-pager, .bx-wrapper .bx-controls-auto{
+    bottom: 0;
 }

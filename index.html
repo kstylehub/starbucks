@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/main.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
 </head>
 
 <body>
@@ -115,7 +118,21 @@
                     <h3>스타벅스 프로모션</h3>
                     <i class="material-icons">
                         check_circle_outline
-                    </i>               
+                    </i>
+                </div>
+            </div>
+            <div class="slider">
+                <div class="bxslider">
+                    <div>
+                        <img src="images/i0lr6S_20200907104548215.jpg" title="">
+                        <button>자세히 보기</button>
+                    </div>
+                    <div>
+                        <img src="images/mOXLaB_20200831114156689.jpg" title="">
+                    </div>
+                    <div>
+                        <img src="images/uX1xA2_20191227175905000.jpg" title="">
+                    </div>                
                 </div>
             </div>
         </section>
@@ -141,6 +158,14 @@
                 e.target.parentNode.style.backgroundColor = '#2C2A29'
             }
         }
+
+        // BXSLIDER 
+        $(function () {
+            $('.bxslider').bxSlider({
+                // captions: true,
+                // slideWidth: 600
+            });
+        });
     </script>
 
 

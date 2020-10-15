@@ -27,7 +27,7 @@ header {
 .top_menu {
     border: 1px solid red;
     display: flex;
-    justify-content: right;
+    justify-content: flex-end;
     padding: 15px;
 }
 
@@ -52,7 +52,7 @@ header {
 }
 
 .nav>li {
-    padding: 10px 20px;
+    padding: 10px 30px;
     font-size: 13px;
 }
 
@@ -211,8 +211,73 @@ section .notice_banner .event_section {
     position: absolute;
     z-index: 9999999;
     background-color:#000;
+    color:red;
+    border:1px solid red;
 }
 
 .slider .bx-wrapper .bx-pager, .bx-wrapper .bx-controls-auto{
     bottom: 0;
 }
+
+/* REWARDS */
+.reward{
+    background-color:#1E3932;
+    padding:30px 0;
+    color:#fff;
+}
+
+.reward .logo_text{
+    width:1100px;
+    border:1px solid red;
+    margin:0 auto;
+    display:flex;
+    justify-content: center;
+}
+
+.reward>div .reward_logo img{
+    width:80%;
+}
+
+.reward_text>div{
+    display:flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    border:1px solid red;
+}
+
+.reward_text .reward_text1>div:nth-child(1),
+.reward_text .reward_text2>div:nth-child(1){
+    background-color:green;
+    margin:0 40px 0 20px;
+}
+
+.reward_text h3{
+    font-size:25px;
+    margin-bottom: 20px;
+}
+
+.reward_text1 h4{
+    line-height: 25px;
+    margin-bottom: 20px;;
+}
+
+.reward_text2 h4{
+    line-height: 25px;
+    margin-top: 20px;
+    font-size:13px;
+}
+
+.reward_text h3, .reward_text h4{
+    width:500px;
+    background-color:blue;
+}
+
+.reward_text button{
+    padding:10px 20px;
+    border-radius: 5px;
+}
+
+.reward_text .reward_text2 button{
+    width:200px;
+}
+
